@@ -1,18 +1,18 @@
-pipeline {
+pipeline{
 	agent any
-	stages {
-		stage('Init') {
+	stages{
+		stage('Init'){
 			steps{
 				echo "Hello this is the initailization"
 			}
 		}	
-		stage('Build') {
-			steps {
+		stage('Build'){
+			steps{
 				echo "Building the sample project"
 			}
 		}
 		stage('Deploy'){
-			steps {
+			steps{
 				echo "Deploying in staging environment"
 			}
 		} 
