@@ -3,10 +3,6 @@ pipeline{
 	stages{
 		stage('Init'){
 			steps{
-				scm{
-					git("https://github.com/anshulc55/Jenkins_Upgradev3.git", "any")
-				}
-				maven("clean package", "java-tomcat-sample/pom.xml")
 				echo "Hello this is the initailization"
 			}
 		}	
